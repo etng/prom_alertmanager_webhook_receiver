@@ -1,0 +1,15 @@
+[Unit]
+Description=Prometheus Alertmanager Webhook Receiver
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/prom_am_webhook_receiver -port=9095 -log=/var/log/prom_am_webhook_receiver.log
+Restart=always
+RestartSec=20s
+User=root
+LimitNOFILE=infinity
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,41 @@
+{
+    "receiver": "web\\.hook",
+    "status": "firing",
+    "alerts": [
+        {
+            "status": "firing",
+            "labels": {
+                "alertname": "测试报警，请忽略",
+                "instance": "192.168.4.172:9101",
+                "job": "nodes",
+                "severity": "page"
+            },
+            "annotations": {
+                "description": "nodes 192.168.4.172:9101 has a high load 3",
+                "summary": "nodes 192.168.4.172:9101 Load too high"
+            },
+            "startsAt": "2021-04-06T07:59:16.877347671Z",
+            "endsAt": "0001-01-01T00:00:00Z",
+            "generatorURL": "http://128bb7e2eedd:9090/graph?g0.expr=node_load15%7Bjob%3D%22nodes%22%7D+%3E+2\u0026g0.tab=1",
+            "fingerprint": "120dbdccaaf299d5"
+        }
+    ],
+    "groupLabels": {
+        "alertname": "测试报警，请忽略"
+    },
+    "commonLabels": {
+        "alertname": "测试报警，请忽略",
+        "job": "nodes",
+        "severity": "page"
+    },
+    "commonAnnotations": {
+        "dingtalkToken": "",
+        "pushplusToken": "xxxxxxxxxxxxxxxx",
+        "pushplusTopic": "xxxxxxxxxxxx"
+
+    },
+    "externalURL": "http://d62c1e3b4869:9093",
+    "version": "4",
+    "groupKey": "{}:{alertname=\"测试报警，请忽略\"}",
+    "truncatedAlerts": 0
+}
